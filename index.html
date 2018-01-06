@@ -1,42 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!This just describes properties of the page>
-    <meta charset="utf-8" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>water-fountains.org</title>
-    <!--<link rel="shortcut icon" href="favicon.ico" >-->
-</head>
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setCookieDomain", "*.water-fountains.org"]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//x-ation.ch/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Piwik Code -->
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!-- Piwik -->
+		<script type="text/javascript">
+          var _paq = _paq || [];
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//analytics.water-fountains.org/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+		</script>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<body>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">water-fountains.org</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="#">Home</a></li>
+								<li><a href="#three">datablue</a></li>
+								<li><a href="#four">proximap</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
 
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<!--<div class="logo"><span class="icon fa-diamond"></span></div>-->
+							<h2>water-fountains.org</h2>
+							<p>harnessing open data</p>
+						</div>
+					</section>
 
+				<!-- Wrapper -->
+					<section id="wrapper">
 
-</body>
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Community project</h2>
+										<p>Open data are increasingly available from both government and crowd-sourced platforms. However, the data often needs to be processed and presented visually to be of direct value to the general public. The water-fountains.org project is an open-source case study that illustrates the data-to-product process by creating a web map in which Zurich's 1200 fountains can be viewed. Data will be pulled from the official data repository <a href="//data.stadt-zuerich.ch">data.stadt-zuerich.ch</a>, and combined with data from <a href="//wikidata.org">wikidata</a> and <a href="//wikimedia.org">wikimedia</a> to provide information that is both complete and rich.</p>
+										<p>The project consists in two key components: a data collector/aggregator and an interactive web map.</p>
+									</div>
+								</div>
+							</section>
 
+						<!--&lt;!&ndash; Two &ndash;&gt;-->
+							<!--<section id="two" class="wrapper alt spotlight style2">-->
+								<!--<div class="inner">-->
+									<!--<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>-->
+									<!--<div class="content">-->
+										<!--<h2 class="major">Open data</h2>-->
+										<!--<p>Reference data (for example fountain names and geocoordinates) will be pulled from the official data repository of the city of Zurich <a href="//data.stadt-zuerich.ch">data.stadt-zuerich.ch</a>. The data will be supplemented by images and descriptions pulled from <a href="//wikidata.org">wikidata</a>, and <a href="//wikimedia.org">wikimedia</a></p>-->
+									<!--</div>-->
+								<!--</div>-->
+							<!--</section>-->
 
+						<!-- Three -->
+							<section id="three" class="wrapper alt spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Component 1: Datablue</h2>
+										<p>Datablue is a data collector and aggregator for open data. The fountain data, coming from multiple sources with varying degrees of reliability and containing different types of information, must be consolidated into a single consistent data set to be served to the web app. Main challenges are:</p>
+										<ul>
+											<li>identifying and merging duplicate objects from different sources</li>
+											<li>managing multiple languages</li>
+											<li>concerving traceability of the information</li>
+										</ul>
+										<a href="//github.com/mmmatthew/datablue" class="special">Datablue Github project</a>
+									</div>
+								</div>
+							</section>
 
+						<!-- Four -->
+							<section id="four" class="wrapper style1">
+								<div class="inner">
+									<h2 class="major">Component 2: proximap</h2>
+									<p>Proximap is an interactive map-based interface for a user to discovering fountains in their vicinity. It consumes data aggregated by Datablue and presents it in an intuitive way with powerful search functions.</p>
+									<a href="//github.com/mmmatthew/proximap" class="special">Proximap Gihub project</a>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/search.png" alt="" /></a>
+											<h3 class="major">Powerful search</h3>
+											<p>Instantaneous full-text and proximity-based search.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/details.png" alt="" /></a>
+											<h3 class="major">Detailed fountain information</h3>
+											<p>Intuitive information and image display.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/routing.png" alt="" /></a>
+											<h3 class="major">Routing</h3>
+											<p>Find the shortest walking or driving route to the fountain of your choice.</p>
+										</article>
+									</section>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get involved</h2>
+							<p>Feel free to join the project!</p>
+							<ul class="contact">
+								<li class="fa-github"><a href="//github.com/mmmatthew/datablue">Datablue: Open data aggregation</a></li>
+								<li class="fa-github"><a href="//github.com/mmmatthew/proximap">Proximap: Fountain Web map </a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Matthew Moy de Vitry CC-BY.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
-
-

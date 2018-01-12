@@ -70,11 +70,10 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#one" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Community project</h2>
-										<p>Open data are increasingly available from both government and crowd-sourced platforms. However, the data often needs to be processed and presented visually to be of direct value to the general public. The water-fountains.org project is an open-source case study that illustrates the data-to-product process by creating a web map in which Zurich's 1200 fountains can be viewed. Data will be pulled from the official data repository <a href="//data.stadt-zuerich.ch">data.stadt-zuerich.ch</a>, and combined with data from <a href="//wikidata.org">wikidata</a> and <a href="//wikimedia.org">wikimedia</a> to provide information that is both complete and rich.</p>
-										<p>The project consists in two key components: a data collector/aggregator and an interactive web map.</p>
+										<h2 class="major">a community project</h2>
+										<p>Open data are increasingly available from both government and crowd-sourced platforms. However, the data often needs to be processed and presented visually to be of direct value to the general public. The water-fountains.org project is an open-source case study that illustrates the data-to-product process by creating a web map in which Zurich's 1200 fountains can be viewed. Data will be pulled from the official data repository <a href="//data.stadt-zuerich.ch" target="_blank">data.stadt-zuerich.ch</a>, and combined with data from <a href="//wikidata.org" target="_blank">wikidata</a> and <a href="//wikimedia.org" target="_blank">wikimedia</a> to provide information that is both complete and rich.</p>
 									</div>
 								</div>
 							</section>
@@ -91,9 +90,9 @@
 							<!--</section>-->
 
 						<!-- Three -->
-							<section id="three" class="wrapper alt spotlight style3">
+							<section id="three" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#three" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Component 1: Datablue</h2>
 										<p>Datablue is a data collector and aggregator for open data. The fountain data, coming from multiple sources with varying degrees of reliability and containing different types of information, must be consolidated into a single consistent data set to be served to the web app. Main challenges are:</p>
@@ -102,38 +101,36 @@
 											<li>managing multiple languages</li>
 											<li>concerving traceability of the information</li>
 										</ul>
-										<a href="//github.com/mmmatthew/datablue" class="special">Datablue Github project</a>
+										<a href="//github.com/mmmatthew/datablue" target="_blank" class="special">Datablue Github project</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Four -->
-							<section id="four" class="wrapper style1">
+							<section id="four" class="wrapper spotlight style4">
 								<div class="inner">
-									<h2 class="major">Component 2: proximap</h2>
-									<p>Proximap is an interactive map-based interface for a user to discover fountains in their vicinity. It consumes data aggregated by Datablue and presents it in an intuitive way with powerful search functions.</p>
-									<a href="//github.com/mmmatthew/proximap" class="special">Proximap Gihub project</a>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/search.png" alt="" /></a>
-											<h3 class="major">Powerful search</h3>
-											<p>Instantaneous full-text and proximity-based search.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/details.png" alt="" /></a>
-											<h3 class="major">Detailed fountain information</h3>
-											<p>Intuitive information and image display.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/routing.png" alt="" /></a>
-											<h3 class="major">Routing</h3>
-											<p>Find the shortest walking or driving route to the fountain of your choice.</p>
-										</article>
-									</section>
+									<a href="#four" class="image"><img src="images/proximap.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Component 2: proximap</h2>
+										<p>Proximap is an interactive map-based interface for a user to discover fountains in their vicinity. It consumes data aggregated by Datablue and presents it in an intuitive way with powerful search and routing functions. It uses the latest web technologies to offer a seamless user experience on all devices.</p>
+										<a href="//github.com/mmmatthew/proximap" class="special" target="_blank">Proximap Gihub project</a>
+									</div>
 								</div>
 							</section>
-
+						<!-- Five -->
+							<section id="five" class="wrapper alt style3">
+								<div class="inner">
+									<div class="content">
+										<h2 class="major">background story</h2>
+										<blockquote>Back in 2015, I was on the City of Zurich's website when I stumbled across an amazing resource : a PDF file containing addresses for around 800 of the city's drinking water fountains! I was just getting interested in web mapping thanks to the inspiring work at Mapbox, so this was a perfect project to get started. I copied the data from the PDF into a text file, and found a free reverse geocoding tool online that provided approximate geographical coordinates for each water fountain address. This initial dataset was rudimentary and contained many errors, and the city of Zurich has since opened a high-quality dataset of all 1200 fountains. - Matthew Moy de Vitry</blockquote>
+										<p>If you are interested, you can check out the original project that inspired water-fountains.org. Just click the links below.</p>
+										<a href="/old" class="special">Original web app</a>
+										<a href="//github.com/mmmatthew/proximap/tree/v0.1-release" target="_blank" class="special">Original Source code</a>
+									</div>
+								</div>
+							</section>
 					</section>
+
 
 				<!-- Footer -->
 					<section id="footer">
@@ -141,8 +138,8 @@
 							<h2 class="major">Get involved</h2>
 							<p>Feel free to join the project!</p>
 							<ul class="contact">
-								<li class="fa-github"><a href="//github.com/mmmatthew/datablue">Datablue: Open data aggregation</a></li>
-								<li class="fa-github"><a href="//github.com/mmmatthew/proximap">Proximap: Fountain Web map </a></li>
+								<li class="fa-github"><a href="//github.com/mmmatthew/datablue" target="_blank">Datablue: Open data aggregation</a></li>
+								<li class="fa-github"><a href="//github.com/mmmatthew/proximap" target="_blank">Proximap: Fountain Web map </a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Matthew Moy de Vitry CC-BY.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
